@@ -1,0 +1,4 @@
+for a user pages you need a repro called [username].github.com with a CNAME file (plus all other files for your pages) in your master branch
+for a project pages your repo can be called whatever BUT you need the CNAME and other files to be in a branch called gh-pages
+
+Moniker has a strange way of creating A records. You have to use their 2 default A records, one uses @ for the hostname and the other uses * for the hostname. You then set the IP address for both of those. I also added a CNAME record for www.chrishenrick.com as the host and cups49.github.com as the address.
