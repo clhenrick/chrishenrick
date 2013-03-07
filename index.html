@@ -17,11 +17,7 @@
 <a name="top"></a>
 <h1>Chris Henrick Cartography</h1>
 
-<!-- <h2>Publication Cartography</h2> -->
-
-
-<!-- <h3>This is a draft version of my site! Come back soon for more updates.</h3> -->
-
+<!--navigation bar here:-->
 <ul id="navlist">
    <li id="active"><a href="index.html" id="current">Portfolio</a></li>
    <li><a href="html/resume.html">Resume</a></li>
@@ -31,7 +27,7 @@
 
 <p>
    <div id="header">
-   Scroll down to view images<br>Click on any image below to view at a larger size<br><i>images may load slowly</i>
+   Scroll down to view images<br>Click on any image below to view at a larger size<br><!--<i>images may load slowly</i>-->
    </div>
 </p>
   
@@ -40,10 +36,12 @@
 
 <div id="portfolio">
 
+   <!--
    <iframe width='700' height='700' frameBorder='0' src='http://a.tiles.mapbox.com/v3/chenrick.funwithtutorials.html#3/0/0'></iframe>
      <p>An open-source web map showing earthquake data from USGS over a basemap of Natural Earth Data <br/>
      I made using Tile Mill, playing around with combining tutorials from their <a href="http://mapbox.com/tilemill/docs/crashcourse/introduction/">website.</a></p>
      <p><br/></p>
+   -->
    
    <iframe width='700' height='700' frameBorder='0' src='http://a.tiles.mapbox.com/v3/chenrick.Moon_New-Orleans_city-guide.html#14/29.9579/-90.0653'></iframe>
       <p>An interactive web map showing points of interest in the French Quarter from the <a href="http://travelmatters.com/book.php?isbn=9781598809022"><em>Moon: New Orleans</em></a> handbook.
@@ -219,7 +217,7 @@
 <script src="js/jquery.lazyload.js" type="text/javascript"></script> 
 <script type="text/javascript" charset="utf-8">
       $(function() {
-          $("img.lazy").lazyload({ threshold : 100 });
+          $("img.lazy").lazyload({ threshold : 50 });
       });
   </script>   
 
