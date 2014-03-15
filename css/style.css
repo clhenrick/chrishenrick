@@ -11,20 +11,11 @@ left: 0px;
 margin: 20px auto;
 width: 100%;
 display: block;
-font-family: arial black, impact, "Myriad Web", Syntax, sans-serif;
-/*color: #0050B2;*/
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 color: #4C4C4C;
 letter-spacing: 3px;
 text-align: center;
-/*
-a:link text-decoration:none;
-a:visited text-decoration:none;
-a:hover text-decoration:none;
-
-a:link color: #4c4c4c;}     
-a:visited color:#4c4c4c;} 
-a:hover color:#FFE687;  
-*/
+text-transform: uppercase;
 }
 
 
@@ -36,7 +27,7 @@ top: -10px;
 left: 0px;
 margin 0px auto;
 display: block;
-font-family: arial black, impact, "Myriad Web", Syntax, sans-serif;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 color: #4C4C4C;
 text-align: center;
 }
@@ -82,10 +73,15 @@ margin: 0px auto;
 padding: 10px;
 top: 0px;
 left: 0px;
-font-family: Helvetica, arial, sans-serif;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 text-align: center;
+text-transform: uppercase;
 font-size: 1em;
 font-weight:600;
+}
+
+#header em {
+	text-transform: lowercase;
 }
 
 #header2
@@ -96,7 +92,7 @@ margin: 0px auto;
 padding: 0px;
 top: 0px;
 left: 0px;
-font-family: Helvetica, arial, sans-serif;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 color: #666666;
 letter-spacing: 5px;
 text-align: center;
@@ -123,7 +119,7 @@ left: 0px;
 padding: 10px 0px 0px;
 margin: 0px auto;
 list-style-type: none;
-font: bold 14px helvetica, arial, sans-serif;
+font: bold 14px "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 border-top: 3px solid grey;
 width: 100%;
 }
@@ -256,7 +252,8 @@ display: block;
 position: relative;
 left: 0px;
 margin: 0px 0px 5px;
-font-family: arial black, impact, "Myriad Web", Syntax, sans-serif;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-weight: bold;
 font-size: 1.2em;
 float: none;
 display: block;
