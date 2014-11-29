@@ -1,4 +1,4 @@
-chrishenrick
-============
+Chris Henrick Cartography
+================
 
-personal website using [GitHub Pages](http://pages.github.com/)
+My Cartography Portfolio website. Coded myself and hosted using [GitHub Pages](http://pages.github.com/)
