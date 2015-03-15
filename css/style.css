@@ -51,7 +51,7 @@ a {
   position: relative;
   color: steelblue;
   text-decoration:none;
-  font-weight:500;
+  font-weight:600;
 }
 
 #outer1 {height: auto; width: 100%;}
@@ -208,7 +208,7 @@ border: 0px;
 position: relative;
 color: steelblue;
 text-decoration:none;
-font-weight:500;
+font-weight: 600;
 }
 
 #portfolio img a
