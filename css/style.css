@@ -1,21 +1,66 @@
-html
+* {
+	box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body
 {
-   overflow-y: scroll;
+max-width: 960px;
+margin: 0 auto;
+padding: 1rem 2rem;
+font-family: "Times New Roman", times, serif;
+font-size: 1.6rem;
+color: #333;
+background-color: #fff;
+text-align: center;
+}
+
+.big-text {
+	font-size: 2.5rem;
+	max-width: 48ch;
+	display: inline-block;
+	margin: 0 auto;
+	padding-bottom: 1.5rem;
+}
+
+@media (min-width: 960px)  {
+	.big-text {
+		font-size: 3rem;
+	}
+}
+
+.counter {
+	font-weight: bold;
+}
+
+.random-image {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #333;
+}
+
+p {
+	font-size: 1.8rem;
 }
 
 h1
 {
-position: relative;
-top: 10px;
-left: 0px;
-margin: 20px auto;
-width: 100%;
-display: block;
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-size: 3.5rem;
 color: #4C4C4C;
 letter-spacing: 3px;
 text-align: center;
 text-transform: uppercase;
+}
+
+@media (min-width: 960px)  {
+	h1 {
+		font-size: 3.5rem;
+	}
 }
 
 
@@ -25,32 +70,16 @@ h2, h3
 position: relative;
 top: -10px;
 left: 0px;
-margin 0px auto;
+margin: 0px auto;
 display: block;
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 color: #4C4C4C;
 text-align: center;
 }
 
-body
-{
-position: relative;
-display: block;
-top: 0px;
-left: 0px;
-margin: 0px auto;
-text-align: center;
-float: none;
-font-family: "Times New Roman", times, serif;
-color: #7F7F7F;
-background-color: E5E5E5;
-width: 100%;
-}
-
 a {
   position: relative;
   color: steelblue;
-  text-decoration:none;
   font-weight:600;
 }
 
@@ -60,7 +89,7 @@ a {
 #outer2 {height: auto; width: 100%;}
 #inner2 {width: 750px; margin-left:auto; margin-right:auto;}
 
-#outer3 {height: auto; width: 100%;} 
+#outer3 {height: auto; width: 100%;}
 #inner3 {width: 500px; margin-left:auto; margin-right:auto;}
 
 #inner3 img
@@ -112,10 +141,10 @@ font-weight: 900;
 #header2 a:hover {text-decoration:none;}
 /*#header2 a:active {text-decoration:underline;}*/
 
-#header2 a:link {color: steelblue;}      
-#header2 a:visited {color:#CCCCCC;}  
-#header2 a:hover {color:#FFE687;}  
-/*#header2 a:active {color:#0050B2;}*/   
+#header2 a:link {color: steelblue;}
+#header2 a:visited {color:#CCCCCC;}
+#header2 a:hover {color:#FFE687;}
+/*#header2 a:active {color:#0050B2;}*/
 
 ul#navlist
 {
@@ -229,7 +258,7 @@ font: 1em black georgia, times, serif;
 color: #4C4C4C;
 }
 
-#resume p 
+#resume p
 {
 position: relative;
 left: 0px;
