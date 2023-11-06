@@ -13,14 +13,75 @@
 
 <body>
 	<h1>Chris Henrick Cartography</h1>
-	<p class="big-text">This site is no longer maintained, please visit <a target="_blank"
-			href="https://clhenrick.io">https://clhenrick.io</a> to view my current work and résumé.</p>
+	<p class="big-text"><em>Note that this site is no longer maintained. Please visit <a target="_blank"
+			href="https://clhenrick.io">https://clhenrick.io</a> to view my current <a href="https://clhenrick.io/work">work</a> and <a href="https://clhenrick.io/about/cv">résumé</a>.</em></p>
+
+	<p>You will be redirected in <strong><span class="counter">10</span> seconds...</strong></p>
+
+	<br>
+
+	<img class="random-image" height="500" width="auto" src="./images/">
 </body>
 
 <script>
+	const fileList = [
+		"07_City-London-Docklands.jpg",
+		"ArabSpring.jpg",
+		"Beijing_Excursions.jpg",
+		"DK_01_South-America.jpg",
+		"DK_02B_SE-Asia.jpg",
+		"DK_05_TurkArmGrg.jpg",
+		"DK_08_Ethiopia.jpg",
+		"DK_09B_Sikkim.jpg",
+		"Delhi_Metro.jpg",
+		"Dirty_Wars_01_Middle-East.jpg",
+		"Dirty_Wars_06_Afghanistan-Pakistan.jpg",
+		"GalapagosTours.jpg",
+		"Galapagos_FC.jpg",
+		"Guanajuato-City.jpg",
+		"Guanajuato_DT.jpg",
+		"Hangzhou.jpg",
+		"Kinship-Gender.jpg",
+		"LA_Sao-Paulo.jpg",
+		"MetroSub-HK.jpg",
+		"Monterey-DT.jpg",
+		"NOAA_RGB.jpg",
+		"North-Coast_split2.jpg",
+		"Ontario.jpg",
+		"Paris-Liberation-1944_.jpg",
+		"Public-PrivateLand_RGB.jpg",
+		"TAH-sample_Neffs-Canyon.jpg",
+		"TAH_ATsec2.jpg",
+		"TAH_HighLine.jpg",
+		"TAH_Walkway-oth.jpg",
+		"Then-Now_sample-coastalgrassland-small.jpg",
+		"Then-Now_sample-oakwoodland-small.jpg",
+		"Toronto-DT.jpg",
+		"Toronto.jpg",
+		"cape-region-relief.jpg",
+		"machu-picchu-relief.jpg",
+		"nashville-skeletron.jpg",
+		"nwb-map-redesign.jpg",
+		"oakland-then-now-baama.jpg",
+	];
+
+	const counter = document.querySelector('.counter');
+	const image = document.querySelector('.random-image');
+
+	const randomFileIndex = Math.floor(Math.random() * fileList.length);
+	image.setAttribute('src', `./images/${fileList[randomFileIndex]}`);
+
+	setInterval(function () {
+		const text = counter.innerHTML;
+		const number = Number(text);
+		if (number > 0) {
+			counter.innerHTML = `${number - 1}`;
+		}
+	}, 1000);
+
 	setTimeout(function () {
 		window.location = 'https://clhenrick.io';
-	}, 5000);
+	}, 10000);
 </script>
 
 </html>
