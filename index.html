@@ -70,6 +70,7 @@
 
 	const randomFileIndex = Math.floor(Math.random() * fileList.length);
 	image.setAttribute('src', `./images/${fileList[randomFileIndex]}`);
+	image.setAttribute('alt', "A geographic map created by Chris Henrick.");
 
 	setInterval(function () {
 		const text = counter.innerHTML;
