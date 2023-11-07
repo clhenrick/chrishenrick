@@ -14,13 +14,15 @@
 <body>
 	<h1>Chris Henrick Cartography</h1>
 	<p class="big-text"><em>Note that this site is no longer maintained. Please visit <a target="_blank"
-			href="https://clhenrick.io">https://clhenrick.io</a> to view my current <a href="https://clhenrick.io/work">work</a> and <a href="https://clhenrick.io/about/cv">résumé</a>.</em></p>
-
-	<p>You will be redirected in <strong><span class="counter">10</span> seconds...</strong></p>
+				href="https://clhenrick.io">https://clhenrick.io</a> to view my current <a
+				href="https://clhenrick.io/work">work</a> and <a href="https://clhenrick.io/about/cv">résumé</a>.</em></p>
 
 	<br>
 
-	<img class="random-image" height="500" width="auto" src="./images/">
+	<figure>
+		<img class="random-image" height="500" width="auto" src="./images/"
+			alt="A geographic map created by Chris Henrick.">
+	</figure>
 </body>
 
 <script>
@@ -64,24 +66,9 @@
 		"nwb-map-redesign.jpg",
 		"oakland-then-now-baama.jpg",
 	];
-
-	const counter = document.querySelector('.counter');
-	const image = document.querySelector('.random-image');
-
 	const randomFileIndex = Math.floor(Math.random() * fileList.length);
+	const image = document.querySelector('.random-image');
 	image.setAttribute('src', `./images/${fileList[randomFileIndex]}`);
-
-	setInterval(function () {
-		const text = counter.innerHTML;
-		const number = Number(text);
-		if (number > 0) {
-			counter.innerHTML = `${number - 1}`;
-		}
-	}, 1000);
-
-	setTimeout(function () {
-		window.location = 'https://clhenrick.io';
-	}, 10000);
 </script>
 
 </html>
